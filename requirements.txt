@@ -1,0 +1,12 @@
+# Versions in the .venv the results were produced with (Python 3, macOS).
+inspect_ai==0.3.261
+langdetect==1.0.9
+numpy==2.5.2
+openai==3.7.0
+pandas==3.0.5
+python-dotenv==1.2.3
+scikit-learn==1.9.0
+scipy==1.18.1
+sentence-transformers==6.1.0
+tiktoken==0.14.0
+torch==2.14.1
