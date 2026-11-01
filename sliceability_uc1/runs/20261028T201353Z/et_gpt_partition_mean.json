@@ -1,0 +1,29 @@
+{
+  "name": "gpt",
+  "target": "score_rel_gpt",
+  "n": 268,
+  "mean_target": 0.0011233915202455193,
+  "min_effect": 0.08,
+  "max_conj": 2,
+  "min_support": 20,
+  "rescale_range": [
+    -0.5993362008573194,
+    0.4006637991426806
+  ],
+  "n_candidate_patterns": 465,
+  "n_eligible_patterns": 46,
+  "split": "discovery",
+  "columns": [
+    "who_is_affected",
+    "symptom_timing",
+    "requested_help",
+    "responsiveness",
+    "health_checks",
+    "basic_abilities",
+    "current_setting",
+    "symptom_intensity",
+    "medicine_role",
+    "pain_status",
+    "user_concern"
+  ]
+}

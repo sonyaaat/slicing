@@ -1,0 +1,29 @@
+{
+  "name": "mean_conj3",
+  "target": "score_rel_mean",
+  "n": 2416,
+  "mean_target": 0.0018113521029364784,
+  "min_effect": 0.05,
+  "max_conj": 3,
+  "min_support": 60,
+  "rescale_range": [
+    -0.5996366256804774,
+    0.5762542958826711
+  ],
+  "n_candidate_patterns": 8975,
+  "n_eligible_patterns": 115,
+  "split": "discovery",
+  "columns": [
+    "patient_age",
+    "episode_timing",
+    "evidence_basis",
+    "possible_trigger",
+    "care_setting",
+    "symptom_course",
+    "intervention_type",
+    "source_material",
+    "request_structure",
+    "output_constraints",
+    "theme"
+  ]
+}

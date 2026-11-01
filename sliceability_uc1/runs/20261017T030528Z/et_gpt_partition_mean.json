@@ -1,0 +1,29 @@
+{
+  "name": "gpt",
+  "target": "score_rel_gpt",
+  "n": 2416,
+  "mean_target": 0.0018880675785679407,
+  "min_effect": 0.05,
+  "max_conj": 2,
+  "min_support": 60,
+  "rescale_range": [
+    -0.6110674914092361,
+    0.5716538413530765
+  ],
+  "n_candidate_patterns": 794,
+  "n_eligible_patterns": 20,
+  "split": "discovery",
+  "columns": [
+    "patient_age",
+    "episode_timing",
+    "evidence_basis",
+    "possible_trigger",
+    "care_setting",
+    "symptom_course",
+    "intervention_type",
+    "source_material",
+    "request_structure",
+    "output_constraints",
+    "theme"
+  ]
+}

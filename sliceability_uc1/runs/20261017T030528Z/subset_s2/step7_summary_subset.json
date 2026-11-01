@@ -1,0 +1,187 @@
+{
+  "started_at_utc": "2026-10-17T16:39:19+00:00",
+  "preregistered_at_utc": "2026-10-17T16:39:40+00:00",
+  "confirmation_read_at_utc": "2026-10-17T16:39:40+00:00",
+  "second_read_of_confirmation_items": true,
+  "first_read_at_utc": "2026-10-17T14:02:39+00:00",
+  "subset": {
+    "name": "S2",
+    "rule": "at least 2 of {episode_timing, symptom_course, possible_trigger} hold a value not in {not_applicable, unknown, parse_error}"
+  },
+  "n_s2": 3077,
+  "n_discovery": 1850,
+  "n_confirmation": 1227,
+  "scopes": {
+    "corpus": {
+      "label": "corpus",
+      "target": "score_rel_mean",
+      "n_all_s2": 3077,
+      "n_discovery": 1850,
+      "n_confirmation": 1227,
+      "min_support": 60,
+      "min_effect": 0.05,
+      "confirm_min_support": 40,
+      "preregistered_confirmed": 2,
+      "preregistered_total": 10,
+      "per_table": {
+        "gpt": {
+          "k": 3,
+          "m": 8
+        },
+        "claude": {
+          "k": 1,
+          "m": 8
+        },
+        "mean": {
+          "k": 3,
+          "m": 8
+        }
+      },
+      "n_final_rules": 3,
+      "means_clipped": {
+        "gpt": 0.49952883087175487,
+        "claude": 0.4890489677185239,
+        "mean": 0.49428889929513936
+      },
+      "means_raw": {
+        "gpt": 0.4893614917276031,
+        "claude": 0.47925499694786755,
+        "mean": 0.4843082443377354
+      }
+    },
+    "theme_emergency_referrals": {
+      "label": "theme:emergency_referrals",
+      "target": "score_mean",
+      "n_all_s2": 440,
+      "n_discovery": 268,
+      "n_confirmation": 172,
+      "min_support": 20,
+      "min_effect": 0.08,
+      "confirm_min_support": 12,
+      "preregistered_confirmed": 2,
+      "preregistered_total": 6,
+      "per_table": {
+        "gpt": {
+          "k": 1,
+          "m": 8
+        },
+        "claude": {
+          "k": 3,
+          "m": 8
+        },
+        "mean": {
+          "k": 1,
+          "m": 8
+        }
+      },
+      "n_final_rules": 3,
+      "means_clipped": {
+        "gpt": 0.5963231733126657,
+        "claude": 0.5897969421956905,
+        "mean": 0.593060057754178
+      },
+      "means_raw": {
+        "gpt": 0.5925513005996172,
+        "claude": 0.5878753689636078,
+        "mean": 0.5902133347816124
+      }
+    },
+    "theme_communication": {
+      "label": "theme:communication",
+      "target": "score_mean",
+      "n_all_s2": 518,
+      "n_discovery": 314,
+      "n_confirmation": 204,
+      "min_support": 20,
+      "min_effect": 0.08,
+      "confirm_min_support": 12,
+      "preregistered_confirmed": 1,
+      "preregistered_total": 6,
+      "per_table": {
+        "gpt": {
+          "k": 2,
+          "m": 8
+        },
+        "claude": {
+          "k": 0,
+          "m": 8
+        },
+        "mean": {
+          "k": 0,
+          "m": 8
+        }
+      },
+      "n_final_rules": 2,
+      "means_clipped": {
+        "gpt": 0.6131525528770553,
+        "claude": 0.591126420866935,
+        "mean": 0.6021394868719951
+      },
+      "means_raw": {
+        "gpt": 0.6080855592614681,
+        "claude": 0.5880992438643482,
+        "mean": 0.5980924015629082
+      }
+    }
+  },
+  "params": {
+    "attributes": [
+      "patient_age",
+      "episode_timing",
+      "possible_trigger",
+      "care_setting",
+      "symptom_course",
+      "intervention_type",
+      "evidence_basis",
+      "theme"
+    ],
+    "excluded_form_attributes": [
+      "request_structure",
+      "output_constraints",
+      "source_material"
+    ],
+    "exclude_values": [
+      "unknown",
+      "not_applicable",
+      "parse_error",
+      "other",
+      "none of these"
+    ],
+    "corpus": {
+      "target": "score_rel_mean",
+      "family": "score_rel",
+      "min_support": 60,
+      "min_effect": 0.05,
+      "max_conj": 2,
+      "max_rows": 8,
+      "prereg_max_rules": 10,
+      "confirm_min_support": 40
+    },
+    "theme": {
+      "target": "score_mean",
+      "family": "score",
+      "min_support": 20,
+      "min_effect": 0.08,
+      "max_conj": 2,
+      "max_rows": 8,
+      "prereg_max_rules": 6,
+      "confirm_min_support": 12,
+      "themes": [
+        "emergency_referrals",
+        "communication"
+      ],
+      "theme_choice": "two highest step-0 R2 (score_rel_mean, r2_cv_mean): emergency_referrals 0.210, communication 0.150"
+    },
+    "bootstrap_n": 2000,
+    "ci": 0.95,
+    "permutation_n": 10000,
+    "permutation_seed": 42,
+    "seed": 42,
+    "prereg_rule": "Pool: distinct rules of the 2-condition tables gpt/claude/mean of the scope. Eligible: deviation on discovery has the same sign for gpt and claude. Rank: number of the three tables containing the rule (desc), then min(|dev gpt|, |dev claude|) (desc). Take up to max_rules. No diff fill."
+  },
+  "other_models": {
+    "decision": "not added",
+    "reason": "MedGemma (vllm/google/medgemma-27b-text-it, log 2026-07-24T12-08-49) and PLaMo (openai-api/plamo/plamo-3.0-prime, log 2026-07-16T05-23-21) were judged by openai/gpt-4.1 with a length-adjustment penalty (center 2000 chars, 0.0299 per 500 chars); GPT-5.5 and Claude Opus 4.7 were judged by openai/gpt-4o-mini without it. Same prompt_ids (4,027/4,027 verified earlier for PLaMo), different grader: scores are not comparable in one table (project rule: never mix judge models)."
+  },
+  "worst_axis_definition": "per model, achieved points on the axis / total positive points (sums to the unclipped score), centred on the theme mean; row term = mean(row) - mean(all), averaged over gpt and claude; the axis with the largest term in the direction of the deviation; n = rule messages with a criterion on that axis"
+}

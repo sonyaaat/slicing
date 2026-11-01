@@ -1,0 +1,628 @@
+{
+  "registered_at_utc": "2026-10-17T16:39:40+00:00",
+  "rule": "Pool: distinct rules of the 2-condition tables gpt/claude/mean of the scope. Eligible: deviation on discovery has the same sign for gpt and claude. Rank: number of the three tables containing the rule (desc), then min(|dev gpt|, |dev claude|) (desc). Take up to max_rules. No diff fill.",
+  "confirmation_part_read": false,
+  "note": "the confirmation items were read once before by step 7 of the main run; this subset run is their second read",
+  "scopes": {
+    "corpus": {
+      "label": "corpus",
+      "target": "score_rel_mean",
+      "max_rules": 10,
+      "source_tables_sha256": {
+        "et_corpus_gpt.csv": "5fcf7e48748b48c41e6d3503fa477f209afb4b229c171acadf651c08001b33fa",
+        "et_corpus_claude.csv": "f48b8914a2a74b3cdec1d31b149fe1ca70d6fee76b61dad0d31421ad09a0d344",
+        "et_corpus_mean.csv": "a56db72d238e11edc726511149a422bac3d7cd3f07dc6a6b50cf629effc6d497"
+      },
+      "rules": [
+        {
+          "rule": "care setting = hospital/emergency care AND intervention type = procedure/device",
+          "rule_columns": "care_setting=hospital/emergency care AND intervention_type=procedure/device",
+          "tables": [
+            "gpt",
+            "claude",
+            "mean"
+          ],
+          "support_discovery": 80,
+          "deviation_gpt": -0.0634956968902751,
+          "deviation_claude": -0.0882387118271289,
+          "deviation_mean": -0.075867204358702,
+          "eligible": true,
+          "kind": "score",
+          "id": 1
+        },
+        {
+          "rule": "patient age = not_stated AND possible trigger = stress/exertion",
+          "rule_columns": "patient_age=not_stated AND possible_trigger=stress/exertion",
+          "tables": [
+            "gpt",
+            "mean"
+          ],
+          "support_discovery": 69,
+          "deviation_gpt": -0.0940527011015134,
+          "deviation_claude": -0.0825171576071694,
+          "deviation_mean": -0.0882849293543414,
+          "eligible": true,
+          "kind": "score",
+          "id": 2
+        },
+        {
+          "rule": "evidence basis = guideline/standard AND theme = communication",
+          "rule_columns": "evidence_basis=guideline/standard AND theme=communication",
+          "tables": [
+            "gpt",
+            "mean"
+          ],
+          "support_discovery": 61,
+          "deviation_gpt": -0.1131919093647739,
+          "deviation_claude": -0.0744340680396525,
+          "deviation_mean": -0.0938129887022132,
+          "eligible": true,
+          "kind": "score",
+          "id": 3
+        },
+        {
+          "rule": "episode timing = weeks months and recurring AND symptom course = getting worse",
+          "rule_columns": "episode_timing=weeks months and recurring AND symptom_course=getting worse",
+          "tables": [
+            "claude",
+            "mean"
+          ],
+          "support_discovery": 70,
+          "deviation_gpt": 0.0680840059866033,
+          "deviation_claude": 0.0798016688427265,
+          "deviation_mean": 0.0739428374146649,
+          "eligible": true,
+          "kind": "score",
+          "id": 4
+        },
+        {
+          "rule": "patient age = 18 to 64 AND theme = health_data_tasks",
+          "rule_columns": "patient_age=18 to 64 AND theme=health_data_tasks",
+          "tables": [
+            "claude",
+            "mean"
+          ],
+          "support_discovery": 64,
+          "deviation_gpt": 0.0613977218719583,
+          "deviation_claude": 0.0972791501883497,
+          "deviation_mean": 0.079338436030154,
+          "eligible": true,
+          "kind": "score",
+          "id": 5
+        },
+        {
+          "rule": "episode timing = happening now/today AND possible trigger = injury/physical contact",
+          "rule_columns": "episode_timing=happening now/today AND possible_trigger=injury/physical contact",
+          "tables": [
+            "gpt",
+            "mean"
+          ],
+          "support_discovery": 106,
+          "deviation_gpt": 0.063348781981783,
+          "deviation_claude": 0.0580640807014403,
+          "deviation_mean": 0.0607064313416116,
+          "eligible": true,
+          "kind": "score",
+          "id": 6
+        },
+        {
+          "rule": "care setting = not_stated AND theme = communication",
+          "rule_columns": "care_setting=not_stated AND theme=communication",
+          "tables": [
+            "gpt",
+            "mean"
+          ],
+          "support_discovery": 116,
+          "deviation_gpt": 0.0506537276400681,
+          "deviation_claude": 0.0524216734709407,
+          "deviation_mean": 0.0515377005555043,
+          "eligible": true,
+          "kind": "score",
+          "id": 7
+        },
+        {
+          "rule": "symptom course = stable/improving AND intervention type = behavior/self-care",
+          "rule_columns": "symptom_course=stable/improving AND intervention_type=behavior/self-care",
+          "tables": [
+            "claude",
+            "mean"
+          ],
+          "support_discovery": 80,
+          "deviation_gpt": 0.0363278972422761,
+          "deviation_claude": 0.0711170679129914,
+          "deviation_mean": 0.0537224825776337,
+          "eligible": true,
+          "kind": "score",
+          "id": 8
+        },
+        {
+          "rule": "possible trigger = stress/exertion",
+          "rule_columns": "possible_trigger=stress/exertion",
+          "tables": [
+            "claude"
+          ],
+          "support_discovery": 91,
+          "deviation_gpt": -0.0749212771003838,
+          "deviation_claude": -0.0694768335821793,
+          "deviation_mean": -0.0721990553412815,
+          "eligible": true,
+          "kind": "score",
+          "id": 9
+        },
+        {
+          "rule": "intervention type = medicine/supplement AND theme = communication",
+          "rule_columns": "intervention_type=medicine/supplement AND theme=communication",
+          "tables": [
+            "claude"
+          ],
+          "support_discovery": 62,
+          "deviation_gpt": -0.0689744444164225,
+          "deviation_claude": -0.0809701233472311,
+          "deviation_mean": -0.0749722838818268,
+          "eligible": true,
+          "kind": "score",
+          "id": 10
+        }
+      ],
+      "pool_not_registered": [
+        {
+          "rule": "episode timing = weeks months and recurring AND theme = health_data_tasks",
+          "rule_columns": "episode_timing=weeks months and recurring AND theme=health_data_tasks",
+          "tables": [
+            "gpt"
+          ],
+          "support_discovery": 81,
+          "deviation_gpt": 0.069942793981569,
+          "deviation_claude": 0.0532084953490417,
+          "deviation_mean": 0.0615756446653053,
+          "eligible": true
+        },
+        {
+          "rule": "care setting = home/community AND symptom course = getting worse",
+          "rule_columns": "care_setting=home/community AND symptom_course=getting worse",
+          "tables": [
+            "gpt"
+          ],
+          "support_discovery": 80,
+          "deviation_gpt": 0.0641399840877686,
+          "deviation_claude": 0.041680790206116,
+          "deviation_mean": 0.0529103871469423,
+          "eligible": true
+        },
+        {
+          "rule": "symptom course = stable/improving AND intervention type = no intervention",
+          "rule_columns": "symptom_course=stable/improving AND intervention_type=no intervention",
+          "tables": [
+            "gpt"
+          ],
+          "support_discovery": 69,
+          "deviation_gpt": -0.0650810039052574,
+          "deviation_claude": -0.0491244686798481,
+          "deviation_mean": -0.0571027362925528,
+          "eligible": true
+        },
+        {
+          "rule": "possible trigger = injury/physical contact AND care setting = home/community",
+          "rule_columns": "possible_trigger=injury/physical contact AND care_setting=home/community",
+          "tables": [
+            "claude"
+          ],
+          "support_discovery": 89,
+          "deviation_gpt": 0.0323179125592838,
+          "deviation_claude": 0.0806403100517176,
+          "deviation_mean": 0.0564791113055007,
+          "eligible": true
+        },
+        {
+          "rule": "episode timing = not_stated AND theme = communication",
+          "rule_columns": "episode_timing=not_stated AND theme=communication",
+          "tables": [
+            "claude"
+          ],
+          "support_discovery": 71,
+          "deviation_gpt": 0.0235166866288979,
+          "deviation_claude": 0.075430732551323,
+          "deviation_mean": 0.0494737095901104,
+          "eligible": true
+        }
+      ]
+    },
+    "theme_emergency_referrals": {
+      "label": "theme:emergency_referrals",
+      "target": "score_mean",
+      "max_rules": 6,
+      "source_tables_sha256": {
+        "et_theme_emergency_referrals_gpt.csv": "2c35187d92118feaa7bd1012b566fec4339a96512623f088911e0d1cd5743e5a",
+        "et_theme_emergency_referrals_claude.csv": "b2ddfb0d4c316ad7977ae6378a1719291a3338ae07d7bfa9e306418501457893",
+        "et_theme_emergency_referrals_mean.csv": "ecb67210a7e3ae3c2512c73ff3d9929d3a80763cbea31bed4b260d88cd05d783"
+      },
+      "rules": [
+        {
+          "rule": "episode timing = happening now/today AND intervention type = not_stated",
+          "rule_columns": "episode_timing=happening now/today AND intervention_type=not_stated",
+          "tables": [
+            "gpt",
+            "claude",
+            "mean"
+          ],
+          "support_discovery": 26,
+          "deviation_gpt": 0.1636308742818449,
+          "deviation_claude": 0.1617213186319193,
+          "deviation_mean": 0.162676096456882,
+          "eligible": true,
+          "kind": "score",
+          "id": 1
+        },
+        {
+          "rule": "possible trigger = medicine/medical treatment",
+          "rule_columns": "possible_trigger=medicine/medical treatment",
+          "tables": [
+            "gpt",
+            "claude",
+            "mean"
+          ],
+          "support_discovery": 21,
+          "deviation_gpt": 0.1418940682575882,
+          "deviation_claude": 0.1528363700254275,
+          "deviation_mean": 0.147365219141508,
+          "eligible": true,
+          "kind": "score",
+          "id": 2
+        },
+        {
+          "rule": "care setting = home/community AND symptom course = getting worse",
+          "rule_columns": "care_setting=home/community AND symptom_course=getting worse",
+          "tables": [
+            "gpt",
+            "claude",
+            "mean"
+          ],
+          "support_discovery": 26,
+          "deviation_gpt": 0.1606585361270621,
+          "deviation_claude": 0.103028143230804,
+          "deviation_mean": 0.1318433396789329,
+          "eligible": true,
+          "kind": "score",
+          "id": 3
+        },
+        {
+          "rule": "episode timing = happening now/today AND care setting = hospital/emergency care",
+          "rule_columns": "episode_timing=happening now/today AND care_setting=hospital/emergency care",
+          "tables": [
+            "claude",
+            "mean"
+          ],
+          "support_discovery": 31,
+          "deviation_gpt": -0.0962304625113003,
+          "deviation_claude": -0.1510026264765198,
+          "deviation_mean": -0.12361654449391,
+          "eligible": true,
+          "kind": "score",
+          "id": 4
+        },
+        {
+          "rule": "care setting = home/community AND intervention type = not_stated",
+          "rule_columns": "care_setting=home/community AND intervention_type=not_stated",
+          "tables": [
+            "gpt",
+            "claude"
+          ],
+          "support_discovery": 22,
+          "deviation_gpt": 0.1338464686270414,
+          "deviation_claude": 0.0919984014472748,
+          "deviation_mean": 0.1129224350371583,
+          "eligible": true,
+          "kind": "score",
+          "id": 5
+        },
+        {
+          "rule": "care setting = not_stated AND intervention type = no intervention",
+          "rule_columns": "care_setting=not_stated AND intervention_type=no intervention",
+          "tables": [
+            "gpt",
+            "mean"
+          ],
+          "support_discovery": 23,
+          "deviation_gpt": 0.1033130607099782,
+          "deviation_claude": 0.0771707934904877,
+          "deviation_mean": 0.0902419271002329,
+          "eligible": true,
+          "kind": "score",
+          "id": 6
+        }
+      ],
+      "pool_not_registered": [
+        {
+          "rule": "possible trigger = not_stated AND symptom course = stable/improving",
+          "rule_columns": "possible_trigger=not_stated AND symptom_course=stable/improving",
+          "tables": [
+            "gpt",
+            "mean"
+          ],
+          "support_discovery": 30,
+          "deviation_gpt": 0.1012812477033722,
+          "deviation_claude": 0.0742524189105233,
+          "deviation_mean": 0.0877668333069479,
+          "eligible": true
+        },
+        {
+          "rule": "episode timing = happening now/today AND care setting = not_stated",
+          "rule_columns": "episode_timing=happening now/today AND care_setting=not_stated",
+          "tables": [
+            "gpt"
+          ],
+          "support_discovery": 42,
+          "deviation_gpt": 0.0818000870876562,
+          "deviation_claude": 0.0525789011192331,
+          "deviation_mean": 0.0671894941034447,
+          "eligible": true
+        },
+        {
+          "rule": "possible trigger = environment food and travel",
+          "rule_columns": "possible_trigger=environment food and travel",
+          "tables": [
+            "gpt"
+          ],
+          "support_discovery": 22,
+          "deviation_gpt": -0.1516171995213929,
+          "deviation_claude": -0.0593538122099412,
+          "deviation_mean": -0.1054855058656671,
+          "eligible": true
+        },
+        {
+          "rule": "possible trigger = not_stated AND intervention type = procedure/device",
+          "rule_columns": "possible_trigger=not_stated AND intervention_type=procedure/device",
+          "tables": [
+            "claude",
+            "mean"
+          ],
+          "support_discovery": 31,
+          "deviation_gpt": -0.0643478109552226,
+          "deviation_claude": -0.1820699731114206,
+          "deviation_mean": -0.1232088920333215,
+          "eligible": true
+        },
+        {
+          "rule": "episode timing = weeks months and recurring AND possible trigger = not_stated",
+          "rule_columns": "episode_timing=weeks months and recurring AND possible_trigger=not_stated",
+          "tables": [
+            "claude"
+          ],
+          "support_discovery": 39,
+          "deviation_gpt": 0.0520316622967916,
+          "deviation_claude": 0.0829919269658195,
+          "deviation_mean": 0.0675117946313057,
+          "eligible": true
+        },
+        {
+          "rule": "symptom course = getting worse AND intervention type = procedure/device",
+          "rule_columns": "symptom_course=getting worse AND intervention_type=procedure/device",
+          "tables": [
+            "claude"
+          ],
+          "support_discovery": 28,
+          "deviation_gpt": -0.0546621286144992,
+          "deviation_claude": -0.1243250774002316,
+          "deviation_mean": -0.0894936030073654,
+          "eligible": true
+        },
+        {
+          "rule": "episode timing = not_stated",
+          "rule_columns": "episode_timing=not_stated",
+          "tables": [
+            "mean"
+          ],
+          "support_discovery": 26,
+          "deviation_gpt": -0.1116248773443486,
+          "deviation_claude": -0.0528546127758678,
+          "deviation_mean": -0.0822397450601082,
+          "eligible": true
+        }
+      ]
+    },
+    "theme_communication": {
+      "label": "theme:communication",
+      "target": "score_mean",
+      "max_rules": 6,
+      "source_tables_sha256": {
+        "et_theme_communication_gpt.csv": "80c857b6785610b075d490b10479a3630320eaf6783ca72ade2a2b9b688b51b6",
+        "et_theme_communication_claude.csv": "9ad61286379244279097048aabe38c12aab0d9af492d14d2a7cc75065d77ca04",
+        "et_theme_communication_mean.csv": "970f82be4b459326e857525e33ed2bdb0599913089942544a3ad2bb32a527c18"
+      },
+      "rules": [
+        {
+          "rule": "symptom course = not_stated AND intervention type = no intervention",
+          "rule_columns": "symptom_course=not_stated AND intervention_type=no intervention",
+          "tables": [
+            "gpt",
+            "claude",
+            "mean"
+          ],
+          "support_discovery": 31,
+          "deviation_gpt": 0.1459643114801723,
+          "deviation_claude": 0.1274212154924919,
+          "deviation_mean": 0.136692763486332,
+          "eligible": true,
+          "kind": "score",
+          "id": 1
+        },
+        {
+          "rule": "patient age = not_stated AND intervention type = procedure/device",
+          "rule_columns": "patient_age=not_stated AND intervention_type=procedure/device",
+          "tables": [
+            "gpt",
+            "claude",
+            "mean"
+          ],
+          "support_discovery": 46,
+          "deviation_gpt": 0.0848211603227154,
+          "deviation_claude": 0.1254833423219852,
+          "deviation_mean": 0.1051522513223501,
+          "eligible": true,
+          "kind": "score",
+          "id": 2
+        },
+        {
+          "rule": "intervention type = medicine/supplement AND evidence basis = guideline/standard",
+          "rule_columns": "intervention_type=medicine/supplement AND evidence_basis=guideline/standard",
+          "tables": [
+            "claude",
+            "mean"
+          ],
+          "support_discovery": 24,
+          "deviation_gpt": -0.1408920742970548,
+          "deviation_claude": -0.1954808844972346,
+          "deviation_mean": -0.1681864793971447,
+          "eligible": true,
+          "kind": "score",
+          "id": 3
+        },
+        {
+          "rule": "symptom course = getting worse AND evidence basis = no outside basis",
+          "rule_columns": "symptom_course=getting worse AND evidence_basis=no outside basis",
+          "tables": [
+            "gpt",
+            "mean"
+          ],
+          "support_discovery": 23,
+          "deviation_gpt": 0.1578843074335767,
+          "deviation_claude": 0.1086143778708844,
+          "deviation_mean": 0.1332493426522305,
+          "eligible": true,
+          "kind": "score",
+          "id": 4
+        },
+        {
+          "rule": "episode timing = happening now/today AND care setting = home/community",
+          "rule_columns": "episode_timing=happening now/today AND care_setting=home/community",
+          "tables": [
+            "gpt",
+            "mean"
+          ],
+          "support_discovery": 39,
+          "deviation_gpt": -0.0903074374353618,
+          "deviation_claude": -0.104922361729351,
+          "deviation_mean": -0.0976148995823563,
+          "eligible": true,
+          "kind": "score",
+          "id": 5
+        },
+        {
+          "rule": "evidence basis = guideline/standard",
+          "rule_columns": "evidence_basis=guideline/standard",
+          "tables": [
+            "gpt",
+            "mean"
+          ],
+          "support_discovery": 61,
+          "deviation_gpt": -0.1169406846535555,
+          "deviation_claude": -0.0856897654260731,
+          "deviation_mean": -0.1013152250398143,
+          "eligible": true,
+          "kind": "score",
+          "id": 6
+        }
+      ],
+      "pool_not_registered": [
+        {
+          "rule": "symptom course = not_stated AND intervention type = not_stated",
+          "rule_columns": "symptom_course=not_stated AND intervention_type=not_stated",
+          "tables": [
+            "gpt"
+          ],
+          "support_discovery": 25,
+          "deviation_gpt": -0.1412807810313561,
+          "deviation_claude": -0.0887375850601378,
+          "deviation_mean": -0.1150091830457469,
+          "eligible": true
+        },
+        {
+          "rule": "possible trigger = not_stated AND care setting = clinic/outpatient care",
+          "rule_columns": "possible_trigger=not_stated AND care_setting=clinic/outpatient care",
+          "tables": [
+            "gpt"
+          ],
+          "support_discovery": 22,
+          "deviation_gpt": -0.1046143172217549,
+          "deviation_claude": -0.0513013796334766,
+          "deviation_mean": -0.0779578484276158,
+          "eligible": true
+        },
+        {
+          "rule": "patient age = not_stated AND possible trigger = injury/physical contact",
+          "rule_columns": "patient_age=not_stated AND possible_trigger=injury/physical contact",
+          "tables": [
+            "gpt"
+          ],
+          "support_discovery": 20,
+          "deviation_gpt": 0.1263459848162779,
+          "deviation_claude": 0.1083754817406174,
+          "deviation_mean": 0.1173607332784475,
+          "eligible": true
+        },
+        {
+          "rule": "episode timing = happening now/today AND symptom course = not_stated",
+          "rule_columns": "episode_timing=happening now/today AND symptom_course=not_stated",
+          "tables": [
+            "claude"
+          ],
+          "support_discovery": 61,
+          "deviation_gpt": -0.0631054566250515,
+          "deviation_claude": -0.0894698994932082,
+          "deviation_mean": -0.0762876780591299,
+          "eligible": true
+        },
+        {
+          "rule": "care setting = home/community AND symptom course = stable/improving",
+          "rule_columns": "care_setting=home/community AND symptom_course=stable/improving",
+          "tables": [
+            "claude"
+          ],
+          "support_discovery": 25,
+          "deviation_gpt": -0.0656493793874481,
+          "deviation_claude": -0.1297812607048735,
+          "deviation_mean": -0.0977153200461609,
+          "eligible": true
+        },
+        {
+          "rule": "possible trigger = environment food and travel",
+          "rule_columns": "possible_trigger=environment food and travel",
+          "tables": [
+            "claude",
+            "mean"
+          ],
+          "support_discovery": 21,
+          "deviation_gpt": -0.0363217338133333,
+          "deviation_claude": -0.1336728319871083,
+          "deviation_mean": -0.084997282900221,
+          "eligible": true
+        },
+        {
+          "rule": "patient age = under 18 AND symptom course = not_stated",
+          "rule_columns": "patient_age=under 18 AND symptom_course=not_stated",
+          "tables": [
+            "claude",
+            "mean"
+          ],
+          "support_discovery": 20,
+          "deviation_gpt": -0.0701095493542346,
+          "deviation_claude": -0.0991043091231245,
+          "deviation_mean": -0.0846069292386797,
+          "eligible": true
+        },
+        {
+          "rule": "episode timing = weeks months and recurring AND intervention type = no intervention",
+          "rule_columns": "episode_timing=weeks months and recurring AND intervention_type=no intervention",
+          "tables": [
+            "claude"
+          ],
+          "support_discovery": 21,
+          "deviation_gpt": -0.0686931542618096,
+          "deviation_claude": -0.0889141831595999,
+          "deviation_mean": -0.0788036687107049,
+          "eligible": true
+        }
+      ]
+    }
+  }
+}

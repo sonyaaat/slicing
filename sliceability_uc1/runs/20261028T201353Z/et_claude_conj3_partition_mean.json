@@ -1,0 +1,29 @@
+{
+  "name": "claude_conj3",
+  "target": "score_rel_claude",
+  "n": 268,
+  "mean_target": 0.004104379678142665,
+  "min_effect": 0.08,
+  "max_conj": 3,
+  "min_support": 20,
+  "rescale_range": [
+    -0.5920371637836712,
+    0.4079628362163288
+  ],
+  "n_candidate_patterns": 4087,
+  "n_eligible_patterns": 191,
+  "split": "discovery",
+  "columns": [
+    "who_is_affected",
+    "symptom_timing",
+    "requested_help",
+    "responsiveness",
+    "health_checks",
+    "basic_abilities",
+    "current_setting",
+    "symptom_intensity",
+    "medicine_role",
+    "pain_status",
+    "user_concern"
+  ]
+}

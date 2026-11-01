@@ -1,0 +1,554 @@
+{
+  "attributes": [
+    {
+      "name": "patient age",
+      "column": "patient_age",
+      "question": "What age group is explicitly stated for the person receiving health advice?",
+      "prompt_values": [
+        "under 18",
+        "18 to 64",
+        "65 and older",
+        "not stated"
+      ],
+      "absence_values": [
+        "not stated"
+      ],
+      "values_as_other": [],
+      "values": [
+        "18 to 64",
+        "not_stated",
+        "under 18",
+        "other"
+      ],
+      "value_map": {
+        "under 18": "under 18",
+        "18 to 64": "18 to 64",
+        "65 and older": "other",
+        "not_stated": "not_stated"
+      },
+      "merged_from": [
+        "patient age"
+      ],
+      "metrics": {
+        "coverage": 0.8666666666666667,
+        "min_theme_coverage": 0.6976744186046512,
+        "reliability": 0.92,
+        "cross_model_agreement": 0.7133333333333334,
+        "max_cramers_v": 0.19169622853434398,
+        "entropy": 0.6859546128600873,
+        "sliceability": 0.8242070931755846
+      },
+      "folded_full": [],
+      "values_final": [
+        "18 to 64",
+        "not_stated",
+        "under 18",
+        "other"
+      ],
+      "value_counts_full": {
+        "18 to 64": 386,
+        "not_stated": 2335,
+        "not_applicable": 568,
+        "under 18": 461,
+        "other": 201,
+        "parse_error": 2,
+        "unknown": 74
+      }
+    },
+    {
+      "name": "episode timing",
+      "column": "episode_timing",
+      "question": "What timing is stated for the symptom, injury, or event?",
+      "prompt_values": [
+        "happening now/today",
+        "weeks months and recurring",
+        "not stated"
+      ],
+      "absence_values": [
+        "not stated"
+      ],
+      "values_as_other": [],
+      "values": [
+        "happening now/today",
+        "not_stated",
+        "weeks months and recurring",
+        "other"
+      ],
+      "value_map": {
+        "happening now/today": "happening now/today",
+        "weeks months and recurring": "weeks months and recurring",
+        "not_stated": "not_stated"
+      },
+      "merged_from": [
+        "episode timing"
+      ],
+      "metrics": {
+        "coverage": 0.7,
+        "min_theme_coverage": 0.5348837209302325,
+        "reliability": 0.88,
+        "cross_model_agreement": 0.5666666666666667,
+        "max_cramers_v": 0.35699599164197193,
+        "entropy": 0.8642906410544724,
+        "sliceability": 0.8147635470181575
+      },
+      "folded_full": [],
+      "values_final": [
+        "happening now/today",
+        "not_stated",
+        "weeks months and recurring",
+        "other"
+      ],
+      "value_counts_full": {
+        "happening now/today": 1126,
+        "not_stated": 683,
+        "weeks months and recurring": 778,
+        "other": 209,
+        "not_applicable": 1150,
+        "parse_error": 57,
+        "unknown": 24
+      }
+    },
+    {
+      "name": "evidence basis",
+      "column": "evidence_basis",
+      "question": "What kind of outside evidence or authority does the user request or supply?",
+      "prompt_values": [
+        "guideline/standard",
+        "research studies",
+        "no outside basis"
+      ],
+      "absence_values": [],
+      "values_as_other": [],
+      "values": [
+        "guideline/standard",
+        "no outside basis",
+        "research studies",
+        "other"
+      ],
+      "value_map": {
+        "guideline/standard": "guideline/standard",
+        "research studies": "research studies",
+        "no outside basis": "no outside basis",
+        "not_stated": "other"
+      },
+      "merged_from": [
+        "evidence basis"
+      ],
+      "metrics": {
+        "coverage": 0.9933333333333333,
+        "min_theme_coverage": 0.9767441860465116,
+        "reliability": 0.9233333333333333,
+        "cross_model_agreement": 0.8733333333333333,
+        "max_cramers_v": 0.21206630217381844,
+        "entropy": 0.6269688664523678,
+        "sliceability": 0.8478785110396782
+      },
+      "folded_full": [],
+      "values_final": [
+        "guideline/standard",
+        "no outside basis",
+        "research studies",
+        "other"
+      ],
+      "value_counts_full": {
+        "no outside basis": 3033,
+        "guideline/standard": 702,
+        "research studies": 238,
+        "not_applicable": 34,
+        "parse_error": 1,
+        "unknown": 5,
+        "other": 14
+      }
+    },
+    {
+      "name": "possible trigger",
+      "column": "possible_trigger",
+      "question": "What cause or trigger is explicitly connected to the health issue?",
+      "prompt_values": [
+        "injury/physical contact",
+        "environment food and travel",
+        "medicine/medical treatment",
+        "stress/exertion",
+        "no trigger stated"
+      ],
+      "absence_values": [
+        "no trigger stated"
+      ],
+      "values_as_other": [],
+      "values": [
+        "environment food and travel",
+        "injury/physical contact",
+        "medicine/medical treatment",
+        "not_stated",
+        "stress/exertion",
+        "other"
+      ],
+      "value_map": {
+        "injury/physical contact": "injury/physical contact",
+        "environment food and travel": "environment food and travel",
+        "medicine/medical treatment": "medicine/medical treatment",
+        "stress/exertion": "stress/exertion",
+        "not_stated": "not_stated"
+      },
+      "merged_from": [
+        "possible trigger"
+      ],
+      "metrics": {
+        "coverage": 0.8233333333333334,
+        "min_theme_coverage": 0.6744186046511628,
+        "reliability": 0.8433333333333334,
+        "cross_model_agreement": 0.67,
+        "max_cramers_v": 0.25172676531862986,
+        "entropy": 0.7267744210705526,
+        "sliceability": 0.7978136959124065
+      },
+      "folded_full": [],
+      "values_final": [
+        "environment food and travel",
+        "injury/physical contact",
+        "medicine/medical treatment",
+        "not_stated",
+        "stress/exertion",
+        "other"
+      ],
+      "value_counts_full": {
+        "injury/physical contact": 334,
+        "not_stated": 1866,
+        "environment food and travel": 352,
+        "stress/exertion": 157,
+        "not_applicable": 638,
+        "medicine/medical treatment": 600,
+        "other": 66,
+        "unknown": 8,
+        "parse_error": 6
+      }
+    },
+    {
+      "name": "care setting",
+      "column": "care_setting",
+      "question": "Where is the health situation or activity taking place?",
+      "prompt_values": [
+        "home/community",
+        "clinic/outpatient care",
+        "hospital/emergency care",
+        "teaching/workshop"
+      ],
+      "absence_values": [],
+      "values_as_other": [],
+      "values": [
+        "clinic/outpatient care",
+        "home/community",
+        "hospital/emergency care",
+        "not_stated",
+        "other"
+      ],
+      "value_map": {
+        "home/community": "home/community",
+        "clinic/outpatient care": "clinic/outpatient care",
+        "hospital/emergency care": "hospital/emergency care",
+        "teaching/workshop": "other",
+        "not_stated": "not_stated"
+      },
+      "merged_from": [
+        "care setting"
+      ],
+      "metrics": {
+        "coverage": 0.8366666666666667,
+        "min_theme_coverage": 0.6511627906976745,
+        "reliability": 0.83,
+        "cross_model_agreement": 0.5633333333333334,
+        "max_cramers_v": 0.30892953121543365,
+        "entropy": 0.8490101245278558,
+        "sliceability": 0.8385589303981741
+      },
+      "folded_full": [],
+      "values_final": [
+        "clinic/outpatient care",
+        "home/community",
+        "hospital/emergency care",
+        "not_stated",
+        "other"
+      ],
+      "value_counts_full": {
+        "clinic/outpatient care": 445,
+        "home/community": 1227,
+        "not_stated": 1327,
+        "not_applicable": 542,
+        "unknown": 112,
+        "other": 96,
+        "hospital/emergency care": 278
+      }
+    },
+    {
+      "name": "symptom course",
+      "column": "symptom_course",
+      "question": "What change over time is stated for the symptoms or condition?",
+      "prompt_values": [
+        "getting worse",
+        "comes and goes",
+        "stable/improving",
+        "no change stated"
+      ],
+      "absence_values": [
+        "no change stated"
+      ],
+      "values_as_other": [],
+      "values": [
+        "comes and goes",
+        "getting worse",
+        "not_stated",
+        "stable/improving",
+        "other"
+      ],
+      "value_map": {
+        "getting worse": "getting worse",
+        "comes and goes": "comes and goes",
+        "stable/improving": "stable/improving",
+        "not_stated": "not_stated"
+      },
+      "merged_from": [
+        "symptom course"
+      ],
+      "metrics": {
+        "coverage": 0.7833333333333333,
+        "min_theme_coverage": 0.6046511627906976,
+        "reliability": 0.9,
+        "cross_model_agreement": 0.68,
+        "max_cramers_v": 0.35699599164197193,
+        "entropy": 0.7170667917977972,
+        "sliceability": 0.8001333750437102
+      },
+      "folded_full": [],
+      "values_final": [
+        "comes and goes",
+        "getting worse",
+        "not_stated",
+        "stable/improving",
+        "other"
+      ],
+      "value_counts_full": {
+        "not_stated": 1674,
+        "stable/improving": 752,
+        "not_applicable": 983,
+        "comes and goes": 235,
+        "getting worse": 309,
+        "unknown": 38,
+        "other": 20,
+        "parse_error": 16
+      }
+    },
+    {
+      "name": "intervention type",
+      "column": "intervention_type",
+      "question": "What kind of health intervention is mainly being considered or requested?",
+      "prompt_values": [
+        "medicine/supplement",
+        "procedure/device",
+        "behavior/self-care",
+        "no intervention"
+      ],
+      "absence_values": [],
+      "values_as_other": [],
+      "values": [
+        "behavior/self-care",
+        "medicine/supplement",
+        "no intervention",
+        "not_stated",
+        "procedure/device",
+        "other"
+      ],
+      "value_map": {
+        "medicine/supplement": "medicine/supplement",
+        "procedure/device": "procedure/device",
+        "behavior/self-care": "behavior/self-care",
+        "no intervention": "no intervention",
+        "not_stated": "not_stated"
+      },
+      "merged_from": [
+        "intervention type"
+      ],
+      "metrics": {
+        "coverage": 0.9133333333333333,
+        "min_theme_coverage": 0.8372093023255814,
+        "reliability": 0.8433333333333334,
+        "cross_model_agreement": 0.5466666666666666,
+        "max_cramers_v": 0.25646552081679974,
+        "entropy": 0.8686433618545456,
+        "sliceability": 0.8751033428404041
+      },
+      "folded_full": [],
+      "values_final": [
+        "behavior/self-care",
+        "medicine/supplement",
+        "no intervention",
+        "not_stated",
+        "procedure/device",
+        "other"
+      ],
+      "value_counts_full": {
+        "procedure/device": 1109,
+        "not_applicable": 282,
+        "medicine/supplement": 1071,
+        "behavior/self-care": 552,
+        "no intervention": 543,
+        "not_stated": 394,
+        "other": 42,
+        "unknown": 30,
+        "parse_error": 4
+      }
+    },
+    {
+      "name": "source material",
+      "column": "source_material",
+      "question": "What material, if any, is the assistant asked to work from?",
+      "prompt_values": [
+        "text to rewrite/translate",
+        "facts to make a document",
+        "records/instructions to edit",
+        "no source material"
+      ],
+      "absence_values": [],
+      "values_as_other": [],
+      "values": [
+        "facts to make a document",
+        "no source material",
+        "text to rewrite/translate",
+        "other"
+      ],
+      "value_map": {
+        "text to rewrite/translate": "text to rewrite/translate",
+        "facts to make a document": "facts to make a document",
+        "records/instructions to edit": "other",
+        "no source material": "no source material",
+        "not_stated": "other"
+      },
+      "merged_from": [
+        "source material"
+      ],
+      "metrics": {
+        "coverage": 0.9966666666666667,
+        "min_theme_coverage": 0.9767441860465116,
+        "reliability": 0.8866666666666667,
+        "cross_model_agreement": 0.74,
+        "max_cramers_v": 0.3268091093326111,
+        "entropy": 0.5837131609644295,
+        "sliceability": 0.8223488314325876
+      },
+      "folded_full": [],
+      "values_final": [
+        "facts to make a document",
+        "no source material",
+        "text to rewrite/translate",
+        "other"
+      ],
+      "value_counts_full": {
+        "facts to make a document": 604,
+        "no source material": 3172,
+        "text to rewrite/translate": 207,
+        "other": 41,
+        "unknown": 2,
+        "not_applicable": 1
+      }
+    },
+    {
+      "name": "request structure",
+      "column": "request_structure",
+      "question": "Does the message contain one task, several related tasks, or several unrelated tasks?",
+      "prompt_values": [
+        "one focused task",
+        "several related tasks",
+        "unrelated/mixed-domain tasks"
+      ],
+      "absence_values": [],
+      "values_as_other": [],
+      "values": [
+        "one focused task",
+        "several related tasks",
+        "other"
+      ],
+      "value_map": {
+        "one focused task": "one focused task",
+        "several related tasks": "several related tasks",
+        "unrelated/mixed-domain tasks": "other",
+        "not_stated": "other"
+      },
+      "merged_from": [
+        "request structure"
+      ],
+      "metrics": {
+        "coverage": 0.9966666666666667,
+        "min_theme_coverage": 0.9767441860465116,
+        "reliability": 0.9366666666666666,
+        "cross_model_agreement": 0.7766666666666666,
+        "max_cramers_v": 0.23512631467152068,
+        "entropy": 0.5263957877173442,
+        "sliceability": 0.8199097070168925
+      },
+      "folded_full": [],
+      "values_final": [
+        "one focused task",
+        "several related tasks",
+        "other"
+      ],
+      "value_counts_full": {
+        "one focused task": 3256,
+        "several related tasks": 694,
+        "other": 46,
+        "not_applicable": 28,
+        "parse_error": 2,
+        "unknown": 1
+      }
+    },
+    {
+      "name": "output constraints",
+      "column": "output_constraints",
+      "question": "What explicit constraint is placed on the form of the answer?",
+      "prompt_values": [
+        "exact length/size",
+        "no explicit output constraint"
+      ],
+      "absence_values": [],
+      "values_as_other": [],
+      "values": [
+        "exact length/size",
+        "no explicit output constraint",
+        "other"
+      ],
+      "value_map": {
+        "exact length/size": "exact length/size",
+        "no explicit output constraint": "no explicit output constraint",
+        "not_stated": "other"
+      },
+      "merged_from": [
+        "output constraints"
+      ],
+      "metrics": {
+        "coverage": 0.99,
+        "min_theme_coverage": 0.9767441860465116,
+        "reliability": 0.9766666666666667,
+        "cross_model_agreement": 0.8833333333333333,
+        "max_cramers_v": 0.3268091093326111,
+        "entropy": 0.3871136568873439,
+        "sliceability": 0.7845934411846702
+      },
+      "folded_full": [],
+      "values_final": [
+        "exact length/size",
+        "no explicit output constraint",
+        "other"
+      ],
+      "value_counts_full": {
+        "no explicit output constraint": 3686,
+        "exact length/size": 266,
+        "not_applicable": 16,
+        "other": 46,
+        "unknown": 13
+      }
+    }
+  ],
+  "sample_n": 300,
+  "annotation_model": "qwen3.6-35b-a3b",
+  "second_model": "qwen3.8-27b",
+  "seed": 42,
+  "reliability_seed": 43
+}

@@ -1,0 +1,113 @@
+{
+  "version": "v3",
+  "started_at_utc": "2026-10-19T16:11:55+00:00",
+  "n_s2": 3077,
+  "split_used": "none (all items of the scope)",
+  "exclude_values": [
+    "unknown",
+    "not_applicable",
+    "parse_error",
+    "other",
+    "none of these",
+    "not_stated"
+  ],
+  "run4_absence_labels_excluded": [
+    "no age wording",
+    "no place named",
+    "No action stated",
+    "no onset-speed wording",
+    "no explicit request"
+  ],
+  "replication_sources": {
+    "main step 7": 4,
+    "S2 step 7 corpus": 3,
+    "S2 step 7 emergency_referrals": 3,
+    "S2 step 7 communication": 2,
+    "run 4 step 7": 4
+  },
+  "params": {
+    "max_conj": 2,
+    "max_rows": 10,
+    "permutation_n": 10000,
+    "permutation_seed": 42,
+    "scopes": [
+      {
+        "key": "corpus",
+        "theme": null,
+        "family": "score_rel",
+        "cols": [
+          "patient_age",
+          "episode_timing",
+          "possible_trigger",
+          "care_setting",
+          "symptom_course",
+          "intervention_type",
+          "evidence_basis"
+        ],
+        "min_support": 40,
+        "min_effect": 0.05,
+        "ca": "axis_rel_context_awareness_{m}",
+        "src": [
+          "main step 7",
+          "S2 step 7 corpus"
+        ]
+      }
+    ]
+  },
+  "tables": {
+    "et_full_corpus_gpt": {
+      "scope": "corpus",
+      "target": "score_rel_gpt",
+      "n": 3077,
+      "scope_mean_target": -0.0014214045746770625,
+      "scope_mean_clipped": 0.49952883087175487,
+      "rescale_range": [
+        -0.6110674914092361,
+        0.5716538413530765
+      ],
+      "n_candidate_patterns": 208,
+      "n_eligible_patterns": 15,
+      "min_support": 40,
+      "min_effect": 0.05,
+      "rows": 10,
+      "n_replicated": 0,
+      "n_crowded_out": 5
+    },
+    "et_full_corpus_claude": {
+      "scope": "corpus",
+      "target": "score_rel_claude",
+      "n": 3077,
+      "scope_mean_target": -0.0030876586039888356,
+      "scope_mean_clipped": 0.4890489677185239,
+      "rescale_range": [
+        -0.5920371637836712,
+        0.5915739445614612
+      ],
+      "n_candidate_patterns": 208,
+      "n_eligible_patterns": 17,
+      "min_support": 40,
+      "min_effect": 0.05,
+      "rows": 10,
+      "n_replicated": 1,
+      "n_crowded_out": 4
+    },
+    "et_full_corpus_mean": {
+      "scope": "corpus",
+      "target": "score_rel_mean",
+      "n": 3077,
+      "scope_mean_target": -0.002254531589332918,
+      "scope_mean_clipped": 0.49428889929513936,
+      "rescale_range": [
+        -0.5996366256804774,
+        0.5762542958826711
+      ],
+      "n_candidate_patterns": 208,
+      "n_eligible_patterns": 16,
+      "min_support": 40,
+      "min_effect": 0.05,
+      "rows": 10,
+      "n_replicated": 0,
+      "n_crowded_out": 5
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "target": "score_rel_mean",
+  "q_low": -0.17313010166676424,
+  "q_high": 0.16674591276928608,
+  "n_low": 604,
+  "n_high": 604,
+  "n_middle": 1208,
+  "n_no_target": 0,
+  "low_by_theme": {
+    "health_data_tasks": 79,
+    "communication": 146,
+    "global_health": 88,
+    "hedging": 94,
+    "emergency_referrals": 83,
+    "complex_responses": 48,
+    "context_seeking": 66
+  },
+  "high_by_theme": {
+    "health_data_tasks": 74,
+    "global_health": 86,
+    "hedging": 112,
+    "context_seeking": 62,
+    "communication": 144,
+    "emergency_referrals": 76,
+    "complex_responses": 50
+  }
+}

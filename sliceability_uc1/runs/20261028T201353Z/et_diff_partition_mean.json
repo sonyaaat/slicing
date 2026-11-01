@@ -1,0 +1,29 @@
+{
+  "name": "diff",
+  "target": "score_rel_diff",
+  "n": 268,
+  "mean_target": -0.004104850210683789,
+  "min_effect": 0.1,
+  "max_conj": 2,
+  "min_support": 20,
+  "rescale_range": [
+    -1.005465406957376,
+    0.5637653622733934
+  ],
+  "n_candidate_patterns": 465,
+  "n_eligible_patterns": 2,
+  "split": "discovery",
+  "columns": [
+    "who_is_affected",
+    "symptom_timing",
+    "requested_help",
+    "responsiveness",
+    "health_checks",
+    "basic_abilities",
+    "current_setting",
+    "symptom_intensity",
+    "medicine_role",
+    "pain_status",
+    "user_concern"
+  ]
+}

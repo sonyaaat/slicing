@@ -1,0 +1,12 @@
+{
+  "target": "score_mean",
+  "reused_from": "runs/20261017T030528Z",
+  "counts": {
+    "discovery": 268,
+    "confirmation": 176
+  },
+  "ks_target": {
+    "D": 0.045369742198100416,
+    "p": 0.9717602090401044
+  }
+}

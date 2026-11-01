@@ -1,0 +1,15 @@
+{
+  "target": "score_mean",
+  "q_low": 0.38802083333333337,
+  "q_high": 0.8286483253588517,
+  "n_low": 67,
+  "n_high": 67,
+  "n_middle": 134,
+  "n_no_target": 0,
+  "low_by_theme": {
+    "emergency_referrals": 67
+  },
+  "high_by_theme": {
+    "emergency_referrals": 67
+  }
+}

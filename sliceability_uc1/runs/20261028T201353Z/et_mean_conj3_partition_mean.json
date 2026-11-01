@@ -1,0 +1,29 @@
+{
+  "name": "mean_conj3",
+  "target": "score_rel_mean",
+  "n": 268,
+  "mean_target": 0.002613885599194137,
+  "min_effect": 0.08,
+  "max_conj": 3,
+  "min_support": 20,
+  "rescale_range": [
+    -0.5956866823204953,
+    0.4043133176795047
+  ],
+  "n_candidate_patterns": 4087,
+  "n_eligible_patterns": 164,
+  "split": "discovery",
+  "columns": [
+    "who_is_affected",
+    "symptom_timing",
+    "requested_help",
+    "responsiveness",
+    "health_checks",
+    "basic_abilities",
+    "current_setting",
+    "symptom_intensity",
+    "medicine_role",
+    "pain_status",
+    "user_concern"
+  ]
+}

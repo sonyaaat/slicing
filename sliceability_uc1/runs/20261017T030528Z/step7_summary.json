@@ -1,0 +1,62 @@
+{
+  "confirmation_read_at_utc": "2026-10-17T14:02:39+00:00",
+  "preregistered_at_utc": "2026-10-17T12:28:30+00:00",
+  "n_full": 4027,
+  "n_discovery": 2416,
+  "n_confirmation": 1611,
+  "confirm_params": {
+    "min_support": 40,
+    "bootstrap_n": 2000,
+    "ci": 0.95,
+    "recompute_full": true
+  },
+  "run_target": "score_rel_mean",
+  "preregistered_confirmed": 2,
+  "preregistered_total": 10,
+  "per_table": {
+    "gpt": {
+      "k": 1,
+      "m": 8
+    },
+    "claude": {
+      "k": 2,
+      "m": 8
+    },
+    "mean": {
+      "k": 2,
+      "m": 8
+    },
+    "diff": {
+      "k": 0,
+      "m": 0
+    },
+    "gpt_conj3": {
+      "k": 2,
+      "m": 8
+    },
+    "claude_conj3": {
+      "k": 2,
+      "m": 8
+    },
+    "mean_conj3": {
+      "k": 2,
+      "m": 8
+    },
+    "diff_conj3": {
+      "k": 0,
+      "m": 0
+    }
+  },
+  "n_final_rules": 4,
+  "corpus_means_clipped": {
+    "gpt": 0.5006740787154691,
+    "claude": 0.49135207738005815,
+    "mean": 0.4960130780477637
+  },
+  "corpus_means_raw": {
+    "gpt": 0.490820536918701,
+    "claude": 0.48250188168782243,
+    "mean": 0.48666120930326173
+  },
+  "worst_axis_definition": "per model, achieved points on the axis / total positive points (sums to the unclipped score), centred on the theme mean; row term = mean(row) - mean(all), averaged over gpt and claude; the axis with the largest term in the direction of the deviation; n = rule messages with a criterion on that axis"
+}

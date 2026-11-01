@@ -1,0 +1,78 @@
+theme_attribute,universal_attribute,n_both,cramers_v,flag
+who is affected,patient_age,406,0.5812902892279351,True
+current setting,care_setting,420,0.5095140271418174,True
+symptom timing,episode_timing,414,0.45125340490657395,False
+basic abilities,symptom_course,402,0.38118147333122565,False
+medicine role,intervention_type,354,0.3732475097315344,False
+current setting,intervention_type,397,0.3349714372162261,False
+symptom intensity,symptom_course,404,0.3229772070812896,False
+symptom timing,symptom_course,412,0.30959952868740526,False
+medicine role,possible_trigger,383,0.3030998983668048,False
+symptom intensity,episode_timing,403,0.2915063524506239,False
+requested help,intervention_type,396,0.29078079740876817,False
+health checks,care_setting,408,0.28520184699784457,False
+current setting,symptom_course,426,0.263868959854533,False
+current setting,episode_timing,429,0.23967240303607218,False
+responsiveness,symptom_course,369,0.2266958323126431,False
+user concern,intervention_type,363,0.22096832112064727,False
+basic abilities,episode_timing,405,0.21562294921338102,False
+health checks,symptom_course,412,0.2154651701210611,False
+who is affected,care_setting,415,0.21116395352064884,False
+symptom timing,care_setting,407,0.20805728302912435,False
+user concern,symptom_course,383,0.2073895300797423,False
+who is affected,episode_timing,421,0.20437503738433888,False
+health checks,intervention_type,386,0.20387262606713125,False
+symptom intensity,care_setting,393,0.2025927125097253,False
+symptom intensity,intervention_type,371,0.19941522032952286,False
+basic abilities,care_setting,397,0.19790402034070512,False
+who is affected,symptom_course,418,0.1955569463528804,False
+responsiveness,care_setting,365,0.19287712275873,False
+responsiveness,intervention_type,341,0.18939165230872818,False
+user concern,care_setting,383,0.1885326442173165,False
+symptom timing,intervention_type,384,0.1870039074993272,False
+symptom intensity,possible_trigger,399,0.18504867065475095,False
+medicine role,care_setting,376,0.18038158617573874,False
+user concern,episode_timing,387,0.17944558811100383,False
+responsiveness,patient_age,357,0.17415163514032592,False
+basic abilities,intervention_type,374,0.16705156393210882,False
+requested help,care_setting,419,0.1669543688988226,False
+who is affected,intervention_type,392,0.16251311130598742,False
+pain status,care_setting,363,0.1622354365967304,False
+basic abilities,possible_trigger,405,0.1617764488820453,False
+responsiveness,episode_timing,372,0.15997484512953572,False
+pain status,symptom_course,369,0.15443797212359428,False
+requested help,episode_timing,428,0.15067744708088868,False
+health checks,episode_timing,413,0.15053786330572863,False
+pain status,patient_age,364,0.14435785937783283,False
+health checks,possible_trigger,410,0.14309994575893195,False
+current setting,possible_trigger,427,0.1418574275345032,False
+pain status,possible_trigger,370,0.13930394836250035,False
+requested help,possible_trigger,426,0.1337698370090688,False
+who is affected,possible_trigger,420,0.1329727156777094,False
+who is affected,evidence_basis,433,0.13140033268662954,False
+medicine role,symptom_course,376,0.13111087140884808,False
+pain status,episode_timing,367,0.12754927086548792,False
+requested help,symptom_course,425,0.12734714790469392,False
+current setting,evidence_basis,440,0.12677261940909862,False
+pain status,intervention_type,344,0.12452176158949838,False
+user concern,possible_trigger,384,0.11796516381395286,False
+responsiveness,possible_trigger,368,0.11560423149799634,False
+current setting,patient_age,412,0.11529930394420985,False
+health checks,patient_age,403,0.1141496445093683,False
+symptom timing,possible_trigger,411,0.1140778396595842,False
+responsiveness,evidence_basis,379,0.10998757535289551,False
+basic abilities,evidence_basis,413,0.10782139006339089,False
+user concern,patient_age,372,0.10748178183481555,False
+medicine role,episode_timing,380,0.09511289218823482,False
+symptom intensity,patient_age,387,0.09293708188505632,False
+requested help,patient_age,411,0.08897912257845018,False
+pain status,evidence_basis,377,0.07804914215844139,False
+symptom intensity,evidence_basis,409,0.07715439714818717,False
+basic abilities,patient_age,392,0.073749983655537,False
+symptom timing,evidence_basis,423,0.0721134499410126,False
+symptom timing,patient_age,400,0.07198067302988402,False
+user concern,evidence_basis,395,0.07019735798057809,False
+health checks,evidence_basis,422,0.06987852288202467,False
+medicine role,patient_age,374,0.06353733717117432,False
+requested help,evidence_basis,439,0.06316841029534526,False
+medicine role,evidence_basis,388,0.05463737414528486,False

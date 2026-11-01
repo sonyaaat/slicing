@@ -1,0 +1,567 @@
+{
+  "attributes": [
+    {
+      "name": "who is affected",
+      "column": "who_is_affected",
+      "question": "Who is experiencing the health problem or possible risk?",
+      "prompt_values": [
+        "user",
+        "baby/child",
+        "known adult",
+        "another person"
+      ],
+      "absence_values": [],
+      "values_as_other": [],
+      "values": [
+        "another person",
+        "baby/child",
+        "known adult",
+        "user",
+        "other"
+      ],
+      "value_map": {
+        "user": "user",
+        "baby/child": "baby/child",
+        "known adult": "known adult",
+        "another person": "another person",
+        "not_stated": "other"
+      },
+      "merged_from": [
+        "who is affected"
+      ],
+      "metrics": {
+        "coverage": 0.9738805970149254,
+        "min_theme_coverage": 0.9738805970149254,
+        "reliability": 0.8917910447761194,
+        "cross_model_agreement": 0.8768656716417911,
+        "max_cramers_v": 0.5644648595082166,
+        "entropy": 0.7700267586796316,
+        "sliceability": 0.8785661334902254
+      },
+      "folded_full": [],
+      "values_final": [
+        "another person",
+        "baby/child",
+        "known adult",
+        "user",
+        "other"
+      ],
+      "value_counts_full": {
+        "user": 210,
+        "known adult": 55,
+        "baby/child": 50,
+        "parse_error": 2,
+        "another person": 119,
+        "not_applicable": 6,
+        "other": 2
+      }
+    },
+    {
+      "name": "symptom timing",
+      "column": "symptom_timing",
+      "question": "What time course is given for the main problem?",
+      "prompt_values": [
+        "hours/same day",
+        "days/weeks",
+        "not stated"
+      ],
+      "absence_values": [
+        "not stated"
+      ],
+      "values_as_other": [],
+      "values": [
+        "days/weeks",
+        "hours/same day",
+        "not_stated",
+        "other"
+      ],
+      "value_map": {
+        "hours/same day": "hours/same day",
+        "days/weeks": "days/weeks",
+        "not_stated": "not_stated"
+      },
+      "merged_from": [
+        "symptom timing"
+      ],
+      "metrics": {
+        "coverage": 0.9552238805970149,
+        "min_theme_coverage": 0.9552238805970149,
+        "reliability": 0.9253731343283582,
+        "cross_model_agreement": 0.7686567164179104,
+        "max_cramers_v": 0.3976904225810881,
+        "entropy": 0.830062216224378,
+        "sliceability": 0.903553077049917
+      },
+      "folded_full": [],
+      "values_final": [
+        "days/weeks",
+        "hours/same day",
+        "not_stated",
+        "other"
+      ],
+      "value_counts_full": {
+        "not_stated": 120,
+        "days/weeks": 100,
+        "hours/same day": 192,
+        "not_applicable": 14,
+        "other": 13,
+        "parse_error": 2,
+        "unknown": 3
+      }
+    },
+    {
+      "name": "requested help",
+      "column": "requested_help",
+      "question": "What kind of help does the user explicitly request?",
+      "prompt_values": [
+        "action/urgency only",
+        "cause/condition name only",
+        "no explicit request"
+      ],
+      "absence_values": [],
+      "values_as_other": [],
+      "values": [
+        "action/urgency only",
+        "cause/condition name only",
+        "no explicit request",
+        "other"
+      ],
+      "value_map": {
+        "action/urgency only": "action/urgency only",
+        "cause/condition name only": "cause/condition name only",
+        "no explicit request": "no explicit request",
+        "not_stated": "other"
+      },
+      "merged_from": [
+        "requested help"
+      ],
+      "metrics": {
+        "coverage": 1.0,
+        "min_theme_coverage": 1.0,
+        "reliability": 0.8022388059701493,
+        "cross_model_agreement": 0.7164179104477612,
+        "max_cramers_v": 0.23977760396034578,
+        "entropy": 0.9006399727970621,
+        "sliceability": 0.9009595929224038
+      },
+      "folded_full": [],
+      "values_final": [
+        "action/urgency only",
+        "cause/condition name only",
+        "no explicit request",
+        "other"
+      ],
+      "value_counts_full": {
+        "action/urgency only": 208,
+        "no explicit request": 103,
+        "other": 60,
+        "cause/condition name only": 72,
+        "not_applicable": 1
+      }
+    },
+    {
+      "name": "responsiveness",
+      "column": "responsiveness",
+      "question": "What is stated about the affected person's alertness or responsiveness?",
+      "prompt_values": [
+        "reduced/absent",
+        "confused",
+        "no change stated"
+      ],
+      "absence_values": [
+        "no change stated"
+      ],
+      "values_as_other": [],
+      "values": [
+        "confused",
+        "not_stated",
+        "reduced/absent",
+        "other"
+      ],
+      "value_map": {
+        "reduced/absent": "reduced/absent",
+        "confused": "confused",
+        "not_stated": "not_stated"
+      },
+      "merged_from": [
+        "responsiveness"
+      ],
+      "metrics": {
+        "coverage": 0.8694029850746269,
+        "min_theme_coverage": 0.8694029850746269,
+        "reliability": 0.9328358208955224,
+        "cross_model_agreement": 0.6940298507462687,
+        "max_cramers_v": 0.33623063254045793,
+        "entropy": 0.7328840082219712,
+        "sliceability": 0.8450409380640402
+      },
+      "folded_full": [],
+      "values_final": [
+        "confused",
+        "not_stated",
+        "reduced/absent",
+        "other"
+      ],
+      "value_counts_full": {
+        "not_stated": 237,
+        "reduced/absent": 80,
+        "other": 42,
+        "not_applicable": 63,
+        "confused": 22
+      }
+    },
+    {
+      "name": "health checks",
+      "column": "health_checks",
+      "question": "What kind of objective health reading or check is reported?",
+      "prompt_values": [
+        "number reported",
+        "unknown/not checked"
+      ],
+      "absence_values": [],
+      "values_as_other": [],
+      "values": [
+        "not_stated",
+        "number reported",
+        "unknown/not checked",
+        "other"
+      ],
+      "value_map": {
+        "number reported": "number reported",
+        "unknown/not checked": "unknown/not checked",
+        "not_stated": "not_stated"
+      },
+      "merged_from": [
+        "health checks"
+      ],
+      "metrics": {
+        "coverage": 0.9477611940298507,
+        "min_theme_coverage": 0.9477611940298507,
+        "reliability": 0.9029850746268657,
+        "cross_model_agreement": 0.7014925373134329,
+        "max_cramers_v": 0.3001197640959402,
+        "entropy": 0.5376753248601601,
+        "sliceability": 0.7961405311722922
+      },
+      "folded_full": [],
+      "values_final": [
+        "not_stated",
+        "number reported",
+        "unknown/not checked",
+        "other"
+      ],
+      "value_counts_full": {
+        "unknown/not checked": 322,
+        "number reported": 80,
+        "not_stated": 22,
+        "other": 2,
+        "unknown": 8,
+        "not_applicable": 10
+      }
+    },
+    {
+      "name": "basic abilities",
+      "column": "basic_abilities",
+      "question": "What effect on basic physical abilities is stated?",
+      "prompt_values": [
+        "unable to do something basic",
+        "ability remains normal",
+        "no effect stated"
+      ],
+      "absence_values": [
+        "no effect stated"
+      ],
+      "values_as_other": [],
+      "values": [
+        "ability remains normal",
+        "not_stated",
+        "unable to do something basic",
+        "other"
+      ],
+      "value_map": {
+        "unable to do something basic": "unable to do something basic",
+        "ability remains normal": "ability remains normal",
+        "not_stated": "not_stated"
+      },
+      "merged_from": [
+        "basic abilities"
+      ],
+      "metrics": {
+        "coverage": 0.9477611940298507,
+        "min_theme_coverage": 0.9477611940298507,
+        "reliability": 0.9291044776119403,
+        "cross_model_agreement": 0.6082089552238806,
+        "max_cramers_v": 0.3931090578129323,
+        "entropy": 0.8891311074913525,
+        "sliceability": 0.9219989263777145
+      },
+      "folded_full": [],
+      "values_final": [
+        "ability remains normal",
+        "not_stated",
+        "unable to do something basic",
+        "other"
+      ],
+      "value_counts_full": {
+        "ability remains normal": 55,
+        "unable to do something basic": 137,
+        "not_stated": 225,
+        "not_applicable": 26,
+        "unknown": 1
+      }
+    },
+    {
+      "name": "current setting",
+      "column": "current_setting",
+      "question": "Where is the affected person when the situation is described?",
+      "prompt_values": [
+        "clinical setting",
+        "outside a clinical setting"
+      ],
+      "absence_values": [],
+      "values_as_other": [],
+      "values": [
+        "clinical setting",
+        "not_stated",
+        "outside a clinical setting",
+        "other"
+      ],
+      "value_map": {
+        "clinical setting": "clinical setting",
+        "outside a clinical setting": "outside a clinical setting",
+        "not_stated": "not_stated"
+      },
+      "merged_from": [
+        "current setting"
+      ],
+      "metrics": {
+        "coverage": 1.0,
+        "min_theme_coverage": 1.0,
+        "reliability": 0.9776119402985075,
+        "cross_model_agreement": 0.5261194029850746,
+        "max_cramers_v": 0.652561107630732,
+        "entropy": 0.6102454585844084,
+        "sliceability": 0.8626191329609719
+      },
+      "folded_full": [],
+      "values_final": [
+        "clinical setting",
+        "not_stated",
+        "outside a clinical setting",
+        "other"
+      ],
+      "value_counts_full": {
+        "outside a clinical setting": 348,
+        "clinical setting": 63,
+        "not_stated": 33
+      }
+    },
+    {
+      "name": "symptom intensity",
+      "column": "symptom_intensity",
+      "question": "How strong is the main symptom or problem described as being?",
+      "prompt_values": [
+        "mild/slight",
+        "severe/worst ever",
+        "no intensity stated",
+        "other intensity"
+      ],
+      "absence_values": [
+        "no intensity stated"
+      ],
+      "values_as_other": [],
+      "values": [
+        "mild/slight",
+        "not_stated",
+        "other intensity",
+        "severe/worst ever",
+        "other"
+      ],
+      "value_map": {
+        "mild/slight": "mild/slight",
+        "severe/worst ever": "severe/worst ever",
+        "other intensity": "other intensity",
+        "not_stated": "not_stated"
+      },
+      "merged_from": [
+        "symptom intensity"
+      ],
+      "metrics": {
+        "coverage": 0.9365671641791045,
+        "min_theme_coverage": 0.9365671641791045,
+        "reliability": 0.8395522388059702,
+        "cross_model_agreement": 0.6455223880597015,
+        "max_cramers_v": 0.3976904225810881,
+        "entropy": 0.838909778078462,
+        "sliceability": 0.8716763936878454
+      },
+      "folded_full": [],
+      "values_final": [
+        "mild/slight",
+        "not_stated",
+        "other intensity",
+        "severe/worst ever",
+        "other"
+      ],
+      "value_counts_full": {
+        "not_stated": 92,
+        "severe/worst ever": 146,
+        "mild/slight": 133,
+        "not_applicable": 24,
+        "other intensity": 36,
+        "unknown": 8,
+        "other": 5
+      }
+    },
+    {
+      "name": "medicine role",
+      "column": "medicine_role",
+      "question": "What role does medicine have in the situation?",
+      "prompt_values": [
+        "taken/supplied",
+        "requested for relief"
+      ],
+      "absence_values": [],
+      "values_as_other": [],
+      "values": [
+        "not_stated",
+        "requested for relief",
+        "taken/supplied",
+        "other"
+      ],
+      "value_map": {
+        "taken/supplied": "taken/supplied",
+        "requested for relief": "requested for relief",
+        "not_stated": "not_stated"
+      },
+      "merged_from": [
+        "medicine role"
+      ],
+      "metrics": {
+        "coverage": 0.8656716417910447,
+        "min_theme_coverage": 0.8656716417910447,
+        "reliability": 0.8843283582089553,
+        "cross_model_agreement": 0.746268656716418,
+        "max_cramers_v": 0.17829040360203624,
+        "entropy": 0.5332158061256141,
+        "sliceability": 0.7610719353752047
+      },
+      "folded_full": [],
+      "values_final": [
+        "not_stated",
+        "requested for relief",
+        "taken/supplied",
+        "other"
+      ],
+      "value_counts_full": {
+        "not_stated": 289,
+        "requested for relief": 61,
+        "not_applicable": 54,
+        "taken/supplied": 35,
+        "other": 5
+      }
+    },
+    {
+      "name": "pain status",
+      "column": "pain_status",
+      "question": "What does the message state about pain?",
+      "prompt_values": [
+        "pain present",
+        "pain denied"
+      ],
+      "absence_values": [],
+      "values_as_other": [],
+      "values": [
+        "not_stated",
+        "pain denied",
+        "pain present",
+        "other"
+      ],
+      "value_map": {
+        "pain present": "pain present",
+        "pain denied": "pain denied",
+        "not_stated": "not_stated"
+      },
+      "merged_from": [
+        "pain status"
+      ],
+      "metrics": {
+        "coverage": 0.832089552238806,
+        "min_theme_coverage": 0.832089552238806,
+        "reliability": 0.8171641791044776,
+        "cross_model_agreement": 0.5522388059701493,
+        "max_cramers_v": 0.26872372140069883,
+        "entropy": 0.806285469664228,
+        "sliceability": 0.8185130670025038
+      },
+      "folded_full": [],
+      "values_final": [
+        "not_stated",
+        "pain denied",
+        "pain present",
+        "other"
+      ],
+      "value_counts_full": {
+        "other": 1,
+        "not_stated": 131,
+        "pain present": 126,
+        "not_applicable": 66,
+        "pain denied": 120
+      }
+    },
+    {
+      "name": "user concern",
+      "column": "user_concern",
+      "question": "What level or kind of concern does the user express about the situation?",
+      "prompt_values": [
+        "strong worry/fear",
+        "reluctant to seek immediate care"
+      ],
+      "absence_values": [],
+      "values_as_other": [],
+      "values": [
+        "not_stated",
+        "reluctant to seek immediate care",
+        "strong worry/fear",
+        "other"
+      ],
+      "value_map": {
+        "strong worry/fear": "strong worry/fear",
+        "reluctant to seek immediate care": "reluctant to seek immediate care",
+        "not_stated": "not_stated"
+      },
+      "merged_from": [
+        "user concern"
+      ],
+      "metrics": {
+        "coverage": 0.9067164179104478,
+        "min_theme_coverage": 0.9067164179104478,
+        "reliability": 0.835820895522388,
+        "cross_model_agreement": 0.582089552238806,
+        "max_cramers_v": 0.2937651740343583,
+        "entropy": 0.743114368477559,
+        "sliceability": 0.8285505606367982
+      },
+      "folded_full": [],
+      "values_final": [
+        "not_stated",
+        "reluctant to seek immediate care",
+        "strong worry/fear",
+        "other"
+      ],
+      "value_counts_full": {
+        "strong worry/fear": 216,
+        "not_stated": 25,
+        "reluctant to seek immediate care": 134,
+        "unknown": 33,
+        "other": 22,
+        "not_applicable": 14
+      }
+    }
+  ],
+  "sample_n": 268,
+  "annotation_model": "qwen3.6-35b-a3b",
+  "second_model": "qwen3.8-27b",
+  "seed": 42,
+  "reliability_seed": 43
+}
