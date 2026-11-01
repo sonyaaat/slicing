@@ -1,0 +1,28 @@
+# HealthBench content is never committed (see the root .gitignore). Run directories hold
+# conversation text, notes, evidence quotes and spans; only files that contain none of it are
+# tracked: configs, attribute definitions and metrics, explanation tables, confirmation
+# results and reports.
+cache/
+__pycache__/
+runs/_scratch*/
+# run 4 (UC1 v4, emergency_referrals) stays local: table versions v2-v4 of
+# code/v5_full_tables2.py read its annotations; none of its files is published
+runs/20261016T235755Z/
+runs/*/*
+!runs/*/run_config.json
+!runs/*/CANARY.txt
+!runs/*/*.meta.json
+!runs/*/attribute_metrics.csv
+!runs/*/attributes_final.json
+!runs/*/et_*.csv
+!runs/*/et_*_partition_mean.json
+!runs/*/FINAL_TABLE_*.csv
+!runs/*/preregistered_rules.json
+!runs/*/preregistered_confirm.csv
+!runs/*/step1_checks.json
+!runs/*/step2_split_summary.json
+!runs/*/step3_contrast.json
+!runs/*/step7_summary.json
+!runs/*/theme_vs_universal_cramers_v.csv
+!runs/*/REPORT_*.md
+!runs/*/subset_s2/

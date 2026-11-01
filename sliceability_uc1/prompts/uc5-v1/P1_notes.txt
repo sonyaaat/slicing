@@ -1,0 +1,13 @@
+You will read one user prompt sent to an assistant. Write 4-6 short factual
+observations about WHAT THE USER WROTE. Each observation must be verifiable
+by rereading the prompt. Describe: who is writing and on whose behalf, what
+is being asked for, what material or information the user supplies and in
+what form, what background about the situation is stated, and any explicit
+constraints on the answer.
+Do NOT judge difficulty, quality, or what a good answer should contain.
+Use the user's own terms when naming things.
+Return JSON: {"prompt_id": "...", "facts": ["...", ...]}
+
+prompt_id: <prompt_id>
+Prompt:
+<user_text>

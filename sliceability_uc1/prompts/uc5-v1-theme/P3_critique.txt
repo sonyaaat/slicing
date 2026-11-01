@@ -1,0 +1,36 @@
+Here is a list of candidate attributes proposed for the messages below, and
+observations about those messages.
+
+For each candidate score 1-5:
+- concreteness: can a lay annotator decide the value by pointing at words
+  in the prompt? (5 = always, 1 = requires judgement)
+- distinctness: is this attribute different in meaning from every other
+  candidate? (5 = yes, 1 = duplicate). If it duplicates, name the duplicate.
+- plainness: would a non-expert understand the name and every value
+  without explanation? (5 = yes, 1 = no)
+- breadth: does the attribute make sense for every message in the
+  observations? (5 = all, 1 = only a few)
+- factor: would a professional in this field regard this as a factor
+  that affects how hard the message is to answer well? (5 = clearly,
+  1 = no)
+
+Then list up to 3 attributes that are MISSING: things visible in the
+observations that no candidate covers, in the same format as candidates.
+Grounding for missing attributes. For every value give at least 2 prompt_ids
+from the observations below that have this value, each with a short quote
+showing why. Values without 2 grounded examples are not allowed. For a value
+that means something is absent or not stated, give 2 prompt_ids but the
+quote may be empty.
+
+Return JSON:
+{"scores": [{"name": "...", "concreteness": n, "distinctness": n,
+  "duplicate_of": "..." | null, "plainness": n, "breadth": n, "factor": n,
+  "note": "..."}],
+ "missing": [{"name": "...", "question": "...",
+  "values": [{"value": "...", "evidence": [{"prompt_id": "...", "quote": "..."}]}]}]}
+
+=== CANDIDATES ===
+<candidates>
+<contrast_sentence>
+=== OBSERVATIONS ===
+<observations>

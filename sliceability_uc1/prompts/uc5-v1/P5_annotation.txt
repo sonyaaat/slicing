@@ -1,0 +1,18 @@
+Read the user prompt and answer one question about it.
+
+Question: <question>
+Possible values: <values>, other.
+
+Rules. Choose the value supported by the prompt's own words and quote the
+shortest span that supports it. Return one of: a listed value; "not_stated"
+if the question makes sense for this message but the message gives no
+information to answer it; "not_applicable" if the question does not make
+sense for this message at all; "unknown" if the message is unreadable or
+contradictory, with one sentence explaining why. Do not infer from what a
+typical user might mean.
+
+Return JSON: {"prompt_id": "...", "value": "...", "evidence_span": "...",
+  "unknown_reason": "..." | null}
+
+Prompt:
+<user_text>

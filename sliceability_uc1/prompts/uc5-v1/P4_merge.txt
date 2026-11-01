@@ -1,0 +1,21 @@
+Below are groups of candidate attributes. Within each group the candidates
+describe the same thing in different words. For each group return ONE
+attribute: the clearest name and question from the group, the union of
+their values with duplicates merged, and only values that appear in at
+least one candidate's evidence. Do not invent new values.
+An attribute has at most 5 values plus 'other'; if the union has more,
+keep the 5 with the most verified evidence and fold the rest into 'other',
+listing what was folded in a field 'folded'.
+Rewrite a value label ONLY if it contains a comma or the word "or"; then
+make it at most 5 words with no comma and no "or". Any other label is
+copied exactly as given. A label that means "none of the listed" becomes
+"none of these". A label of the form "other: <named group>" keeps the
+named group as its label without the word "other".
+Return, for every value, both the old label and the new label.
+Return JSON:
+{"attributes": [{"name": "...", "question": "...",
+  "values": [{"old_label": "...", "new_label": "..."}],
+  "folded": ["..."], "merged_from": ["..."]}]}
+
+=== GROUPS ===
+<groups>
